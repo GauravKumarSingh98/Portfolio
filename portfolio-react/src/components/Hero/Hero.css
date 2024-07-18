@@ -1,0 +1,120 @@
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.hero img {
+  margin-top: 40px;
+  width: 320px;
+  height: 320px;
+  object-fit: cover; /* This ensures the image covers the dimensions without distortion */
+  border-radius: 50%; /* Optional: this will make the image circular */
+}
+
+.hero h1 {
+  text-align: center;
+  width: 70%;
+  font-size: 70px;
+  font-weight: 600;
+}
+.hero h1 span {
+  letter-spacing: 5px;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(29, 253, 179, 1) 42%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.hero-connect {
+  padding: 25px 45px;
+  border-radius: 34px;
+  background: linear-gradient(225deg, #bbbd56, #dfe167);
+  box-shadow: -9px 9px 18px #7b7c39, 9px -9px 18px #ffff87;
+  /* border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 168, 29, 1) 47%,
+    rgba(252, 176, 69, 1) 100%
+  ); */
+  cursor: pointer;
+}
+
+
+.hero-resume {
+  padding: 25px 75px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  border-radius: 34px;
+  background: linear-gradient(225deg, #56c954, #66ef64);
+  box-shadow: -9px 9px 18px #388437, 9px -9px 18px #86ff83;
+}
+
+.hero-connect:hover {
+  border: 2px solid white;
+  background: #6082d2;
+  box-shadow: inset -24px 24px 15px #526fb3, inset 24px -24px 15px #6e96f2;
+}
+
+.hero-resume:hover {
+  border-color: #b415ff;
+  border-radius: 55px;
+  background: #6082d2;
+  box-shadow: inset -24px 24px 15px #526fb3, inset 24px -24px 15px #6e96f2;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    margin-top: 120px;
+    width: 260px;
+  }
+  .hero img {
+    margin-top: 50px;
+    width: 90%;
+    font-size: 50px;
+  }
+  .hero p {
+    width: 60%;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 10px 0px;
+  }
+  .hero-action {
+    gap: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  .hero-connect {
+    padding: 20px 30px;
+    border-radius: 40px;
+  }
+  .hero-resume {
+    padding: 20px 50px;
+    border-radius: 40px;
+  }
+}

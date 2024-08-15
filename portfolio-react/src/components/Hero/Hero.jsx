@@ -1,14 +1,14 @@
 import React from "react";
 import "./Hero.css";
 import profile from "../../assets/profile.jpeg";
-import resume from "../../assets/GauravSingh_Frontend_2years_Resume.pdf";
+import resume from "../../assets/GauravSingh_Frontend_2+years_Resume.pdf";
 import { Link } from "react-router-dom";
 
 const Hero = (menu) => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "GauravSingh_Frontend_2years_Resume.pdf";
+    link.download = "GauravSingh_Frontend_2+years_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -30,7 +30,7 @@ const Hero = (menu) => {
             to="/contact"
             style={{ textDecoration: "none", color: "black" }}
           >
-            <p onClick={() => setMenu("contact")}>Connect With Me</p>
+            <p onClick={() => setMenu("contact")}>Connect</p>
             {menu === "contact" ? <img src={underline} alt="" /> : <></>}
           </Link>
         </div>
